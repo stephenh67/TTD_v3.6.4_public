@@ -55,3 +55,5 @@ Supply‑Chain & AppSec Posture (Prod)
 Operational Notes
 - Any content changes after T‑2 require re‑hash + re‑sign.
 - China pack uses SM3/BSN and is released separately.
+- Any content changes after T‑2 require re‑hash + re‑sign.
+- China pack uses SM3/BSN and is released separately.
