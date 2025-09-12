@@ -1,0 +1,27 @@
+{
+"protocol": "TTD",
+"version": "3.6.4",
+"release_id": "ttd-public-2025-09-19",
+"created_at": "2025-09-19T00:00:00-04:00",
+"timezone": "America/Toronto",
+"chain": {
+"prev_token_id": null,
+"this_token_id": "ttd-public-2025-09-19",
+"next_hint": null
+},
+"artifacts": [
+{ "name": "EXEC_SUMMARY.txt", "sha256": "<fill>" },
+{ "name": "TECHNICAL_OVERVIEW.txt", "sha256": "<fill>" },
+{ "name": "FAMILY_REGISTRY_PUBLIC.txt", "sha256": "<fill>" },
+{ "name": "MILESTONES_TIMELINE.txt", "sha256": "<fill>" },
+{ "name": "LICENSE_NOTICE.txt", "sha256": "<fill>" }
+],
+"signatures": {
+"alg": "ed25519",
+"signed_by": "TTD-public",
+"signature": "<detached_or_embed_later>"
+},
+"license": "Apache-2.0",
+"privacy": "public",
+"notes": "Public skeleton; no private governance or ops runbooks."
+}
