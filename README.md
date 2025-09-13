@@ -5,11 +5,11 @@ It is designed for verifiability, not promotion. All artifacts are released unde
 
 ---
 
-> **Latest frozen release:** [TTD v3.6.4 — Public Skeleton](https://github.com/helixprojectai-code/TTD_v3.6.4_public/releases/tag/ttd-v3.6.4-public)
->
-> **Verify:** Import `pubkey.asc` → `gpg --verify MANIFEST.sig MANIFEST.md` → compare SHA-256 in `MANIFEST.md`.
->
-> **Signing key fingerprint:** `DC17 C7BA 1260 802B E5CC  2B6C 38FC 0FF0 2B78 5C0C`
+# Latest frozen release:** [TTD v3.6.4 — Public Skeleton](https://github.com/helixprojectai-code/TTD_v3.6.4_public/releases/tag/ttd-v3.6.4-public)
+
+# Verify:** Import `pubkey.asc` → `gpg --verify MANIFEST.sig MANIFEST.md` → compare SHA-256 in `MANIFEST.md`.
+
+# Signing key fingerprint:** `DC17 C7BA 1260 802B E5CC  2B6C 38FC 0FF0 2B78 5C0C`
 
 
 ## Contents
@@ -54,4 +54,5 @@ See `SCOPE.md` for details.
 2. Check hashes:
    ```bash
    sha256sum -c MANIFEST.md
+
 
