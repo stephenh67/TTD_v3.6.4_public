@@ -2,14 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TTD v3.6.4 — Public Skeleton</title>
 
-  <!-- Strict CSP (inline scripts are blocked; only self-hosted JS allowed) -->
-  <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self'; style-src 'self';
-                 img-src 'self' data:; object-src 'none'; base-uri 'self';
-                 frame-ancestors 'self'; upgrade-insecure-requests;">
+  <!-- CSP served via header; keep meta out to avoid drift -->
   <style>
     body { font-family: system-ui, sans-serif; margin: 2rem; }
     h1 { font-size: 1.5rem; margin-bottom: .25rem; }
@@ -25,8 +21,10 @@
   <h2>Sample JSONL Render</h2>
   <div id="jsonl-output">Loading sample...</div>
 
-  <!-- External, same-origin scripts only (CSP-safe) -->
-  <script src="assets/jsonl-table.js"></script>
-  <script src="assets/init.js"></script>
+  <!-- Same-origin scripts only; SRI added -->
+  <script src="assets/jsonl-table.js"
+          integrity="sha256-YjjsTsVWROsKVFMxFyrm7z8qPKT9NNvTHch3FfapaFg="></script>
+  <script src="assets/init.js"
+          integrity="sha256-N2qdCuncDfciL9iwsjZl6TWnauEdeRPi9dnWVyExFsY="></script>
 </body>
 </html>
