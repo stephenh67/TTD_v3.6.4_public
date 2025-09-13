@@ -43,10 +43,6 @@ See `SCOPE.md` for details.
    - `MANIFEST.md`
    - `MANIFEST.sig`
    - `pubkey.asc`
-            pub   ed25519 2025-09-13 [SC] [expires: 2028-09-13]
-                  DC17 C7BA 1260 802B E5CC  2B6C 38FC 0FF0 2B78 5C0C
-            uid           [ultimate] Stephen Hope <sbhope@gmail.com>
-            sub   cv25519 2025-09-13 [E] [expires: 2028-09-13]
 
 2. Check hashes:
    ```bash

@@ -7,19 +7,26 @@ All artifacts are immutable post-freeze; any change requires re-hash + re-sign.
 
 ## Files (SHA256)
 
-- EXEC_SUMMARY.txt — `sha256: __________________`
-- TECHNICAL_OVERVIEW.txt — `sha256: __________________`
-- FAMILY_REGISTRY_PUBLIC.txt — `sha256: __________________`
-- MILESTONES_TIMELINE.txt — `sha256: __________________`
-- PUBLIC_TOKEN_HEADER.yaml — `sha256: __________________`
-- PUBLIC_TOKEN_HEADER.json — `sha256: __________________`
-- LICENSE_NOTICE.txt — `sha256: __________________`
-- index.html — `sha256: __________________`
-- assets/jsonl-table.js — `sha256: __________________`
-- SCOPE.md — `sha256: __________________`
-- RISKS_NOTES.md — `sha256: __________________`
-- STATE.md — `sha256: __________________`
-- MANIFEST.md — `sha256: __________________`  *(self-hashed for reproducibility)*
+# Core docs
+- EXEC_SUMMARY.md — `sha256: 7E7310285813D95C186B847FEE5AB35B72BAF01A30EE794B3667628111CE02D6`
+- TECHNICAL_OVERVIEW.md — `sha256: 00CE1E356A1957993430607C0CB294876B7D0CB588A243E13B4D24A558F79E04`
+- FAMILY_REGISTRY_PUBLIC.md — `sha256: 997492334DBD3175EA7D642C9CBDD2F8044F0F5AB492548B25BB7DD4DFBC2241`
+- MILESTONES_TIMELINE.md — `sha256: 317E94931064EADC9EC54329088CEA747C660688E04195673E2718BE03B90C15`
+- SCOPE.md — `sha256: B13EB4903A653C32D6FDB32821621F0DEFCD956785B6720FE360AA23A2D9CAFF`
+- RISKS_NOTES.md — `sha256: 5844258B3DCB3032473B4C30ED07C540B399811A0831B8141076A781A578A6CE`
+- STATE.md — `sha256: 71439B2D7D91343ACA85A94479F5CA0ED857DF92CC986EDBA3F936BE5F0EC4C4`
+- LICENSE_NOTICE.md — `sha256: 0F2410233D1C8ABBD76B0555EC37A15D8367E5F0D46122DBA1B7A200A5F1AC1B`
+- LICENSE — `sha256: 1EB85FC97224598DAD1852B5D6483BBCF0AA8608790DCC657A5A2A761AE9C8C6`
+
+# Token headers (metadata)
+- PUBLIC_TOKEN_HEADER.yaml — `sha256: EB071006DDA833E5CFD5E7E2C7C2CB6E1E6466B59AFC19CC855EEC6718D0B858`
+- PUBLIC_TOKEN_HEADER.json — `sha256: 1FBC322199633ADB8FDFABB3D55D85000F9DB0F480499013B15375AD7B976F17`
+
+# Static site
+- index.html — `sha256: 3DD848E470CBF1852D84689912BA739C9F5BB997260FF20AD62B7635BDE99AB4`
+- assets/jsonl-table.js — `sha256: 6238EC4EC55644EB0A545331172AE6EF3F2A3CA4FD34DBD31DC87715F6A96858`
+- assets/init.js — `sha256: 376A9D0AE9DC0DF7222FD8B0B23665E935A76AE11D7913E2F5D9D657213116C6`
+- assets/sample.jsonl — `sha256: 9E42297EAD5AA44488A57782C56FD3002CEF0AD5AB734D89DB93BB8230F76AB4`
 
 ---
 
@@ -29,8 +36,14 @@ All artifacts are immutable post-freeze; any change requires re-hash + re-sign.
 - Algorithm: Ed25519
 - Public key: `pubkey.asc`
 
-Verification:
+### Verification
+```powershell
+# Import key (once)
+gpg --import .\pubkey.asc
+gpg --fingerprint "Stephen Hope"
 
-```bash
-sha256sum -c MANIFEST.md
+# Verify this manifest
 gpg --verify MANIFEST.sig MANIFEST.md
+
+# Hash individual files as needed
+Get-FileHash .\index.html -Algorithm SHA256
