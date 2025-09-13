@@ -1,4 +1,0 @@
-- Supply‑chain phishing / dependency hijack → No npm bundles; single custom JS; CSP + SRI; periodic hash diffs.
-- Content drift / last‑minute edits → Freeze at T‑2; require re‑hash + re‑sign for any change.
-- Bot brigading / authenticity doubts → Emphasize verifiability (hashes/signatures); avoid hypey claims.
-- Expectation mismatch (hallucination discourse) → Frame v3.6.4 as honest, provenance‑first; note abstention > speculation.
