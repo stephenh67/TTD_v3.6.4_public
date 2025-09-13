@@ -1,21 +1,34 @@
-TTD v3.6.4 — Executive Summary
+# Executive Summary — TTD v3.6.4
 
+Purpose: Plain-language overview of the public skeleton. Apache-2.0. Minimal, verifiable, reproducible.
 
-TTD (Tokenized Trust Data) provides verifiable, cryptographically chained public artifacts for transparency and reproducibility.
+## What This Is
+- A small, auditable pack of public artifacts for transparency.
+- Cryptographic integrity via SHA-256 manifest + detached Ed25519 signature.
+- No npm-built bundles; one custom JS (`assets/jsonl-table.js`). Tight CSP.
 
+## What Ships (Public)
+- EXEC_SUMMARY.md
+- TECHNICAL_OVERVIEW.md
+- FAMILY_REGISTRY_PUBLIC.md
+- MILESTONES_TIMELINE.md
+- PUBLIC_TOKEN_HEADER.yaml / PUBLIC_TOKEN_HEADER.json
+- LICENSE_NOTICE.md
+- Static site: `index.html`, `assets/jsonl-table.js`
 
-What’s new in v3.6.4
-- Public transparency via a minimal, audit‑ready pack (Apache‑2.0).
-- Supply‑chain hygiene: zero node‑built bundles in prod; single custom JS; tight CSP; SRI pins.
-- “Honest mode” positioning: prefer abstention over speculation; clarity + provenance over hype.
-- China variant remains separate (SM3/BSN/Gitee), excluded from this drop.
+## What Does Not Ship (Held Back)
+- Draft press + media quotes, social calendar
+- Governance internals (roles, quorum, private signatures)
+- Ops runbooks, incident notes, non-public dashboards
+- China-specific assets (SM3/BSN/Gitee)
+- Raw chat logs, internal sims, third-party restricted content
 
+## Positioning
+- “Honest mode”: abstention over speculation.
+- Reproducibility over rhetoric. Link claims to verifiable artifacts.
 
-Why it matters
-- Verifiable artifacts (hashes + signatures) reduce ambiguity, enable reproducibility, and establish authenticity amid bot‑heavy, synthetic‑tone traffic.
-- Minimal runtime surface area lowers phishing/dependency hijack risk and simplifies audits.
+## Change Control
+- Freeze at T-2. Any edit ⇒ re-hash + re-sign the manifest.
 
-
-How to engage
-- Check hashes, verify the detached signature, and review the ASCII chain map and verification steps in TECHNICAL_OVERVIEW.txt.
-- File list and token header templates included; press materials are prepared but ON HOLD pending timing.
+## Verification
+- See `MANIFEST.md` for SHA-256s and signature instructions.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TTD v3.6.4 — Public Skeleton</title>
+
+  <!-- CSP served via header; keep meta out to avoid drift -->
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; }
+    h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+    table.jsonl-table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    table.jsonl-table th, table.jsonl-table td { border: 1px solid #ccc; padding: .5rem; text-align: left; }
+    table.jsonl-table th { background: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <h1>TTD v3.6.4 — Public Skeleton</h1>
+  <p>This is the public, reproducible skeleton release. See <code>README.md</code> for context.</p>
+
+  <h2>Sample JSONL Render</h2>
+  <div id="jsonl-output">Loading sample...</div>
+
+  <!-- Same-origin scripts only; SRI added -->
+  <script src="assets/jsonl-table.js"
+          integrity="sha256-YjjsTsVWROsKVFMxFyrm7z8qPKT9NNvTHch3FfapaFg="></script>
+  <script src="assets/init.js"
+          integrity="sha256-N2qdCuncDfciL9iwsjZl6TWnauEdeRPi9dnWVyExFsY="></script>
+</body>
+</html>
