@@ -1,14 +1,19 @@
-TTD v3.6.4 — Model Family Registry (Public)
+# Family Registry (Public) — TTD v3.6.4
 
+Purpose: Public, PII-safe model family list.
 
-# Rules
-# - PII‑safe; do not include internal codenames that de‑anonymize individuals.
-# - Versions refer to public tags only; private branches are excluded.
-# - Use one line per family entry; keep notes terse.
+| Family ID      | Name (Public) | Scope Note                          | Contact/Link                     |
+|----------------|----------------|-------------------------------------|----------------------------------|
+| fam-core-001   | Core Models    | Primary public artifacts only       | (public link if applicable)      |
+| fam-aux-001    | Auxiliary      | Tools supporting verification/site  | (public link if applicable)      |
+| fam-china-sep  | China Variant  | Released separately (SM3/BSN/Gitee) | (tracked outside this pack)      |
 
+Notes:
+- No private signatures, emails, or PII in this file.
+- China variant tracked in its own release line.
 
-family, version, modality, license, notes
-alpha, 2025.08, text, Apache‑2.0, baseline public family
-alpha‑mini, 2025.08, text, Apache‑2.0, size‑optimized sibling
-beta‑vision, 2025.07, multimodal, Apache‑2.0, vision‑enabled public build
-# Add/trim entries as appropriate for the public set.
+## Change Control
+- Additive entries only; do not retro-edit rows.
+
+## Verification
+- Compare IDs referenced in `PUBLIC_TOKEN_HEADER.*` (if any).
