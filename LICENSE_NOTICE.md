@@ -1,19 +1,14 @@
-TTD v3.6.4 — License Notice
+# License Notice — TTD v3.6.4
 
+This public skeleton is released under **Apache License 2.0** (see `LICENSE`).
 
-This public pack is licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+## Attribution
+- Copyright © 2025 The TTD Contributors
+- Include this notice with all substantial portions of the software.
+- Third-party assets, if added later, must include their own notices and SRI pins.
 
+## Change Control
+- License and notices must be updated via PR; changes require review.
 
-http://www.apache.org/licenses/LICENSE-2.0
-
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and limitations under the License.
-
-
-Attribution Notes
-- Include the following notice in any forks or mirrors: "Contains TTD v3.6.4 public artifacts (Apache-2.0)."
-- Third‑party content is excluded from this pack or included only with compatible licensing and explicit attribution.
+## Verification
+- Ensure `LICENSE` is present and unmodified from upstream Apache-2.0 text.
